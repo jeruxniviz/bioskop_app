@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "973568300123",
+    "project_id": "login-ta-79886",
+    "storage_bucket": "login-ta-79886.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973568300123:android:ee1fe34286757dd9929b7e",
+        "android_client_info": {
+          "package_name": "com.example.bioskop_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973568300123-902fn5pasl8d6en4gtq5jujc4apbat6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bioskop_app",
+            "certificate_hash": "12f423ff36261ef4cf0f81c09a4ffa8fb87e9e85"
+          }
+        },
+        {
+          "client_id": "973568300123-g0ul1lo1le2mdsc2q4guo6205sbabft4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiIhM8os-5fCT0jzo5sbH3yYh6Wetk46M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973568300123-g0ul1lo1le2mdsc2q4guo6205sbabft4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
