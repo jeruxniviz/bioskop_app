@@ -22,14 +22,13 @@ class _SplashState extends State<Splash> {
     var durasi = const Duration(seconds: 3);
     return Timer(durasi, () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => Login()));
+          context, MaterialPageRoute(builder: (context) => Nav()));
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
         body: Container(
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
@@ -39,7 +38,7 @@ class _SplashState extends State<Splash> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Image.asset(
-                      'images/bakarhutan.jpg',
+                      'images/kanesa_cinema_transparan.png',
                       width: MediaQuery.of(context).size.width * 0.6,
                       height: MediaQuery.of(context).size.width * 0.6,
                     ),
