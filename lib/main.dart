@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Bioskop App',
+      title: 'Kanesa Cinema',
       theme: ThemeData(
         textTheme: TextTheme(
           bodyText1: GoogleFonts.basic(),

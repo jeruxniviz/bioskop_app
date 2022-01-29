@@ -1,3 +1,4 @@
+import 'package:bioskop_app/system/nav.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -31,7 +32,12 @@ class _LoginState extends State<Login> {
                         ? null
                         : () async {
                             await _googleSignIn.signIn();
-                            setState(() {});
+                            setState(() {
+                              Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Nav()));
+                            });
                           }),
                 ElevatedButton(
                     child: Text('Sign Out'),

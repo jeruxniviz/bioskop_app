@@ -22,7 +22,7 @@ class _SplashState extends State<Splash> {
     var durasi = const Duration(seconds: 3);
     return Timer(durasi, () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => Nav()));
+          context, MaterialPageRoute(builder: (context) => Login()));
     });
   }
 
