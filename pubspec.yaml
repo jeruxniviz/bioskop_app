@@ -31,7 +31,8 @@ dependencies:
   google_sign_in_web: ^0.10.0+4
   http: ^0.13.3
   url_launcher: ^6.0.9
-
+  flutter_custom_clippers: ^2.0.0
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
