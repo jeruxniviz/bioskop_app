@@ -1,18 +1,17 @@
+import 'package:bioskop_app/system/login.dart';
 import 'package:bioskop_app/system/nav.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
-import 'daftar.dart';
-
-class Login extends StatefulWidget {
-  const Login({Key? key}) : super(key: key);
+class Daftar extends StatefulWidget {
+  const Daftar({Key? key}) : super(key: key);
 
   @override
-  _LoginState createState() => _LoginState();
+  _DaftarState createState() => _DaftarState();
 }
 
-class _LoginState extends State<Login> {
+class _DaftarState extends State<Daftar> {
   GoogleSignIn _googleSignIn = GoogleSignIn(scopes: ['email']);
   @override
   Widget build(BuildContext context) {
@@ -28,7 +27,7 @@ class _LoginState extends State<Login> {
             alignment: Alignment.center,
             padding: const EdgeInsets.all(10),
             child: Text(
-              "Login",
+              "Daftar",
               style: GoogleFonts.basic(fontSize: 22, color: Colors.white),
             ),
           ),
@@ -43,7 +42,7 @@ class _LoginState extends State<Login> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Text('Login Via Google'),
+                      Text('Daftar Via Google'),
                       Icon(Icons.g_mobiledata)
                     ],
                   ),
@@ -53,7 +52,7 @@ class _LoginState extends State<Login> {
                           await _googleSignIn.signIn();
                           setState(() {
                             Navigator.pushReplacement(context,
-                                MaterialPageRoute(builder: (context) => Nav()));
+                                MaterialPageRoute(builder: (context) => Login()));
                           });
                         })),
           SizedBox(
@@ -101,7 +100,7 @@ class _LoginState extends State<Login> {
               height: 50,
               padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
               child: ElevatedButton(
-                child: const Text('Login'),
+                child: const Text('Daftar'),
                 onPressed: () {
                   print(nameController.text);
                   print(passwordController.text);
@@ -113,19 +112,18 @@ class _LoginState extends State<Login> {
           Row(
             children: <Widget>[
               const Text(
-                "Tidak memiliki akun ?",
+                "Memiliki akun ?",
                 style: TextStyle(color: Colors.white),
               ),
               TextButton(
                 child: const Text(
-                  'Daftar Sekarang',
+                  'Masuk',
                   style: TextStyle(color: Colors.amber),
                 ),
                 onPressed: () {
                   //signup screen
-                  
                       Navigator.push(
-                          context, MaterialPageRoute(builder: (context) => Daftar()));
+                          context, MaterialPageRoute(builder: (context) => Login()));
                 },
               )
             ],

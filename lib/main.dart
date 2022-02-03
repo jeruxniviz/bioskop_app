@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
             buttonColor: Colors.yellow[700]),
-        primarySwatch: Colors.amber,
+        primarySwatch: Colors.orange,
       ),
       home: Splash(),
     );
