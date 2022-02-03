@@ -80,4 +80,4 @@ flutter:
 flutter_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "images/kanesa_cinema_icon.png"
+  image_path: "images/logo1.png"

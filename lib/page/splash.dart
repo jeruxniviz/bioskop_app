@@ -39,7 +39,7 @@ class _SplashState extends State<Splash> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Image.asset(
-                      'images/kanesa_cinema_transparan.png',
+                      'images/logo.png',
                       width: MediaQuery.of(context).size.width * 0.6,
                       height: MediaQuery.of(context).size.width * 0.6,
                     ),

@@ -1,4 +1,6 @@
 import 'package:bioskop_app/page/splash.dart';
+import 'package:bioskop_app/page/start.dart';
+import 'package:bioskop_app/system/nav.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -30,3 +32,15 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+// class AuthenticationWrapper extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     final firebaseUser = context.watch<User>();
+
+//     if (firebaseUser != null) {
+//       return Nav();
+//     }
+//     return Start();
+//   }
+// }
